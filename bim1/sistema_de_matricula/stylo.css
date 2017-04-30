@@ -1,0 +1,51 @@
+body{
+	background-color: #E6E6E6;
+	margin: 0;
+	padding: 0;
+	margin-top: 100px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+#caixa{
+	text-align: center;
+	background-color: #85FFC7;
+	margin: auto;
+	width: 200px;
+	padding: 20px;
+	padding-top: 10px;
+	color: #143838;
+	border-radius: 15px;
+	display: block;
+}
+input, select{
+	margin-bottom: 10px;
+}
+
+h3{
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #FF8552;
+}
+
+input[type="submit"]{
+	background-color: #143838;
+	color: white;
+	border: 0;
+	font-size: 30px;
+}
+
+select{
+	background-color: #FF8552;
+	color: white;
+
+	border: 0;
+
+	font-size: 15px;
+}
+
+label{
+	font-size: 20px;
+}
