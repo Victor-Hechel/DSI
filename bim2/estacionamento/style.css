@@ -1,0 +1,23 @@
+a{
+	text-decoration: none;
+}
+a, input, button{
+	background-color: #CAD49D;
+	color: #484538;
+}
+
+body{
+	text-align: center;
+	background-color: #D4EAC8;
+	color: #484538;
+	padding-top: 100px;
+}
+
+table{
+	margin-left: 470px;
+	padding: 20px;
+	background-color: #56A3A6;
+	margin-right: 50px;
+	border: 2px solid;
+	border-radius: 25px;
+}

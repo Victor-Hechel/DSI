@@ -1,0 +1,37 @@
+﻿CREATE TABLE admins(id SERIAL PRIMARY KEY,
+		    login VARCHAR(20) NOT NULL,
+		    senha VARCHAR(20) NOT NULL);
+
+INSERT INTO admins VALUES(DEFAULT, 'admin', 'admin');
+INSERT INTO admins VALUES(DEFAULT, 'admin2', 'admin2');
+
+CREATE TABLE fabricantes(id SERIAL PRIMARY KEY,
+			 nome VARCHAR(30) NOT NULL);
+
+CREATE TABLE medicamentos(id SERIAL PRIMARY KEY,
+			  nome VARCHAR(30) NOT NULL,
+			  fabricante VARCHAR(30) NOT NULL,
+			  controlado BOOLEAN NOT NULL,
+			  quantidade INTEGER NOT NULL,
+			  preco FLOAT NOT NULL);
+
+			  DROP TABLE medicamentos;
+		  
+INSERT INTO medicamentos VALUES(DEFAULT, 'spray', 'lab1', FALSE, 30, 75.50);
+INSERT INTO medicamentos VALUES(DEFAULT, 'pirula', 'lab2', TRUE, 10, 1.50);
+INSERT INTO medicamentos VALUES(DEFAULT, 'antialergico', 'USAProducts', FALSE, 10, 50);
+
+
+
+SELECT * FROM medicamentos;
+
+SELECT id, nome, preco FROM medicamentos WHERE nome LIKE '%p%';
+
+SELECT * FROM medicamentos med 
+WHERE fabricante = 'USAProducts';
+
+SELECT * FROM medicamentos WHERE controlado = 't'
+
+SELECT * FROM medicamentos WHERE quantidade <= 5
+
+select * from admins
